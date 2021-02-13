@@ -59,7 +59,7 @@ const StartGameScreen = (props) => {
       <Card style={styles.summaryContainer}>
         <Text> You selected </Text>
         <NumberContainer>{selectedNumber}</NumberContainer>
-        <Button title=" START GAME" onpress={() => onStartGame(selectedNumber)} />
+        <Button title=" START GAME" onPress={() => props.onStartGame(selectedNumber)} /> 
       </Card>
     );
   }
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     width: '100%',
     justifyContent: 'space-between',
-    paddingHorizontal: 20,
+    paddingHorizontal: 10,
   },
   button: {
     width: 100,
